@@ -1,0 +1,68 @@
+<!--
+    Title: index.html
+    Summary: Contains the HTML5 code for displaying the home page.
+    Author: Luke Walpole, Kay Rogage (Week 8 - The contents of the weather-container were taken and adapted to meet my needs.)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Planet</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!--
+        Title: jQuery CDN - Latest Stable Versions
+        Author: jQuery Foundation
+        Date: 03/05/2024
+        Code Version: 3.7.1
+        Availability: https://releases.jquery.com/ 
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/map.js"></script>  
+
+    <!--
+        Title: Google Maps API
+        Author: Google
+        Date: 25/05/2024
+        Availability: https://developers.google.com/maps 
+    -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=placeholder&loading=async&callback=initMap&libraries=marker,marker&v=beta"></script>
+</head>
+<body>
+    <!--Header Content-->
+    <header>
+        <div class="header-title">Living Planet</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./about.php">About</a></li>
+                <li><a href="./pages/references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main Content-->
+    <main class="main-container">
+        <div id="map"></div>
+        <div id="weather-container">
+            <!--Retrieve weather data for today-->
+            <p>Current Coordinates: <span id="currentCoords"></span></p>
+            <p>Current City: <span id="currentCity"></span></p>
+            <p>&#9728; Description: <span id="weatherdescription"></span></p>
+            <p>&#127780; Temperature: <span id="weathertemp"></span>&deg;C</p>
+            <p>&#127788; Wind speed: <span id="weatherwind"></span>m/s</p>
+            <p>Clouds: <span id="clouds"></span>%</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Air Pollution: <span id="airpollution"></span>μg/m3</p>
+        </div>
+    </main>
+
+    <!--Footer Content-->
+    <footer>
+        <p>&copy; 2024 Luke Walpole, Northumbria University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

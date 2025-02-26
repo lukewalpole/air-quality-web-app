@@ -1,0 +1,130 @@
+/*
+    Title: style.css
+    Summary: Contains the CSS3 code for styling the web solution.
+    Author: Luke Walpole
+*/
+
+/* HTML and Body Styling */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Navigation Styling */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.header-title {
+  margin-left: 20px; 
+  font-size: 24px; 
+  font-weight: bold; 
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px; 
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container Styling */
+
+.main-container {
+  position: relative;
+  height: 90vh; 
+}
+
+/* Google Map Styling */
+
+#map {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+/* Weather Container Styling */
+
+#weather-container {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9); 
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); 
+  max-width: 300px;
+  z-index: 100; 
+  font-size: 0.9em;
+}
+
+/* Google Map Marker Styling */
+
+.marker-content {
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.marker-good {
+  background-color: green;
+}
+
+.marker-moderate {
+  background-color: yellow;
+  color: black; 
+}
+
+.marker-bad {
+  background-color: red;
+}
+
+.marker-neutral {
+  background-color: white;
+}
+
+/* Footer Styling */
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 14px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
